@@ -22,3 +22,89 @@
 
 ## 📁 Project Structure
 
+
+---
+
+## 🚀 Tech Stack
+
+**Frontend:**
+- React.js
+- React Router DOM
+- React Toastify
+- Axios
+
+**Backend:**
+- Node.js & Express.js
+- MongoDB & Mongoose
+- JWT Authentication
+- Bcrypt Password Hashing
+- Multer (for file uploads)
+- Cloudinary (image hosting)
+- Stripe & Razorpay (payment gateways)
+
+---
+
+## 🔐 Features
+
+### 👤 User Features
+- Signup / Login with JWT
+- Product browsing and filtering
+- Secure Checkout with Razorpay & Stripe
+- Order history
+- Wishlist & cart functionality
+
+### 🛠️ Admin Panel
+- Admin login
+- Create, update, delete products
+- View all users
+- Manage orders
+- Upload images to Cloudinary
+
+---
+
+## 🧪 API Endpoints (Backend)
+
+| Method | Endpoint                      | Description                 |
+|--------|-------------------------------|-----------------------------|
+| POST   | `/api/auth/register`         | Register a new user        |
+| POST   | `/api/auth/login`            | User login                 |
+| GET    | `/api/products`              | Get all products           |
+| POST   | `/api/products` (admin)      | Create new product         |
+| POST   | `/api/payment/stripe`        | Stripe payment session     |
+| POST   | `/api/payment/razorpay`      | Razorpay payment order     |
+
+> Full documentation coming soon via Postman or Swagger.
+
+---
+
+## 🧰 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/e-commerce-app.git
+cd e-commerce-app
+
+# Backend setup
+cd backend
+npm install
+touch .env  # Add your environment variables
+npm start
+
+# Frontend setup
+cd ../frontend
+npm install
+npm run dev  # or npm start
+
+
+MONGODB_URI=your_mongo_uri
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=xxx
+CLOUDINARY_API_KEY=xxx
+CLOUDINARY_API_SECRET=xxx
+STRIPE_SECRET_KEY=xxx
+RAZORPAY_KEY_ID=xxx
+RAZORPAY_KEY_SECRET=xxx
+
+
+---
+
